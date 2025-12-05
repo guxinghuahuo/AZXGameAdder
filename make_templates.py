@@ -20,8 +20,8 @@ def prepare_digit_image(cell_img):
         gray = cell_img.copy()
 
     h, w = gray.shape
-    margin_h = int(h * 0.15)
-    margin_w = int(w * 0.15)
+    margin_h = int(h * 0.25)
+    margin_w = int(w * 0.25)
     gray = gray[margin_h:h - margin_h, margin_w:w - margin_w]
 
     return gray
